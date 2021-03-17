@@ -79,9 +79,10 @@
 }
 
 .image {
-  display: flex;
-  width: 200px;
+  display: inline-block;
+  width: 250px;
   transition: all 2s;
+  padding: 20px;
 
   &--1:hover {
     transform: translate(400px, 300px);
@@ -89,6 +90,7 @@
 
   &--2:hover {
     transform: scale(1.5);
+    transform-origin: top;
   }
 
   &--3:hover {
@@ -96,6 +98,7 @@
   }
 
   &--4:hover {
-    transform: rotate(180deg);
+    transform: rotate(30deg);
+    transform-origin: 30% 80%;
   }
 }
