@@ -58,3 +58,15 @@
 .move:hover {
   transform: translate(80vw, 0);
   background-color: aquamarine; }
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.image {
+  display: flex;
+  transition: all 2s;
+  width: 200px; }
+  .image:hover {
+    transform: translate(400px, 300px) skew(15deg) rotate(180deg) scale(1.5); }
