@@ -66,7 +66,13 @@
 
 .image {
   display: flex;
-  transition: all 2s;
-  width: 200px; }
-  .image:hover {
-    transform: translate(400px, 300px) skew(15deg) rotate(180deg) scale(1.5); }
+  width: 200px;
+  transition: all 2s; }
+  .image--1:hover {
+    transform: translate(400px, 300px); }
+  .image--2:hover {
+    transform: scale(1.5); }
+  .image--3:hover {
+    transform: skew(5deg); }
+  .image--4:hover {
+    transform: rotate(180deg); }

@@ -80,10 +80,22 @@
 
 .image {
   display: flex;
-  transition: all 2s;
   width: 200px;
+  transition: all 2s;
 
-  &:hover {
-    transform: translate(400px, 300px) skew(15deg) rotate(180deg) scale(1.5);
+  &--1:hover {
+    transform: translate(400px, 300px);
+  }
+
+  &--2:hover {
+    transform: scale(1.5);
+  }
+
+  &--3:hover {
+    transform: skew(5deg);
+  }
+
+  &--4:hover {
+    transform: rotate(180deg);
   }
 }
