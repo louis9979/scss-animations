@@ -78,15 +78,6 @@
   flex-direction: column;
 }
 
-.buttons {
-  background-image: linear-gradient(to right bottom, rgba(rgb(23, 190, 140), 0.8), rgba(rgb(51, 75, 141), 0.8)),
-    url(../img/nat-1-large.jpg);
-  background-size: cover;
-  margin-top: -60px;
-  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-  padding: 40px 0;
-}
-
 .img {
   display: flex;
   flex-direction: column;
@@ -121,6 +112,16 @@
   &--4:hover {
     transform: rotateY(180deg);
   }
+}
+
+.buttons {
+  background-image: linear-gradient(to right bottom, rgba(rgb(23, 190, 140), 0.8), rgba(rgb(51, 75, 141), 0.8)),
+    url(../img/nat-1-large.jpg);
+  background-size: cover;
+  margin-top: -60px;
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  padding: 40px 0;
+  height: 1100px;
 }
 
 a {
@@ -165,11 +166,11 @@ a {
 
   &:hover {
     color: azure;
-    transform: scale(1.1) translateX(20px);
+    transform: scale(1.02);
     box-shadow: -2rem 1.5rem 2rem rgba(black, 0.6);
     font-weight: 900;
     letter-spacing: 2px;
-    border: 1px solid;
+    border-width: 0;
 
     &::before {
       transform: translate(0);
@@ -395,7 +396,7 @@ span:after {
   background-color: rgba(#2d3436, 0.7);
 }
 
-.container {
+.container-1 {
   width: 1010px;
   height: 700px;
   position: relative;
@@ -464,7 +465,7 @@ h2 {
   transition: all 0.7s;
 }
 
-a {
+.fuji {
   margin-bottom: -10px;
   text-decoration: none;
   transition: all 0.7s;
@@ -479,7 +480,7 @@ a {
   }
 }
 
-p {
+.mt-fuji {
   font-size: 20px;
   width: 80%;
   align-self: center;

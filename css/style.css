@@ -64,13 +64,6 @@
   align-items: center;
   flex-direction: column; }
 
-.buttons {
-  background-image: linear-gradient(to right bottom, rgba(23, 190, 140, 0.8), rgba(51, 75, 141, 0.8)), url(../img/nat-1-large.jpg);
-  background-size: cover;
-  margin-top: -60px;
-  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
-  padding: 40px 0; }
-
 .img {
   display: flex;
   flex-direction: column;
@@ -94,6 +87,14 @@
     transform: skew(15deg); }
   .image--4:hover {
     transform: rotateY(180deg); }
+
+.buttons {
+  background-image: linear-gradient(to right bottom, rgba(23, 190, 140, 0.8), rgba(51, 75, 141, 0.8)), url(../img/nat-1-large.jpg);
+  background-size: cover;
+  margin-top: -60px;
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  padding: 40px 0;
+  height: 1100px; }
 
 a {
   display: flex;
@@ -132,11 +133,11 @@ a {
     border-radius: 13px; }
   .slide-hover:hover {
     color: azure;
-    transform: scale(1.1) translateX(20px);
+    transform: scale(1.02);
     box-shadow: -2rem 1.5rem 2rem rgba(0, 0, 0, 0.6);
     font-weight: 900;
     letter-spacing: 2px;
-    border: 1px solid; }
+    border-width: 0; }
     .slide-hover:hover::before {
       transform: translate(0); }
 
@@ -321,13 +322,13 @@ span:after {
   align-items: center;
   background-color: rgba(45, 52, 54, 0.7); }
 
-.container {
+.container-1 {
   width: 1010px;
   height: 700px;
   position: relative;
   overflow: hidden;
   text-align: center; }
-  .container:before {
+  .container-1:before {
     content: '';
     position: absolute;
     top: 0;
@@ -339,15 +340,15 @@ span:after {
     transition: all 0.7s;
     transform: translate(1000px, 700px) rotate(180deg);
     opacity: 0; }
-  .container:hover:before {
+  .container-1:hover:before {
     transform: translate(0) rotate(0deg);
     opacity: 1;
     overflow: hidden; }
-  .container:hover h2 {
+  .container-1:hover h2 {
     transform: translate(0, 0); }
-  .container:hover p {
+  .container-1:hover p {
     transform: translate(0, 0); }
-  .container:hover a {
+  .container-1:hover a {
     transform: translateY(0); }
 
 img {
@@ -376,7 +377,7 @@ h2 {
   transform: translate(200px, -200px);
   transition: all 0.7s; }
 
-a {
+.fuji {
   margin-bottom: -10px;
   text-decoration: none;
   transition: all 0.7s;
@@ -384,11 +385,11 @@ a {
   width: 300px;
   padding: 15px;
   transform: translateY(200px); }
-  a:hover {
+  .fuji:hover {
     background-color: rgba(0, 0, 0, 0.3);
     color: sandybrown; }
 
-p {
+.mt-fuji {
   font-size: 20px;
   width: 80%;
   align-self: center;
