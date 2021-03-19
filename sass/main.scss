@@ -270,6 +270,7 @@ a {
   background-color: rgb(51, 51, 51);
   height: 500px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: -80px;
@@ -346,4 +347,16 @@ span:after {
   height: 100%;
   background-color: white;
   transition: all 2s;
+}
+
+.text-fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 110px 0;
+  padding: 0;
+  font-family: Verdana;
+  font-size: 120px;
+  color: #ccc;
+  position: relative;
 }
