@@ -129,6 +129,35 @@ a {
   border: 0 solid #3b163b;
   padding: 40px 80px;
   position: relative;
-  transition: all 1s;
+  transition: all 2s;
   overflow: hidden;
-  border-radius: 15px; }
+  border-radius: 15px;
+  text-align: center; }
+  .btn-expand:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3b163b;
+    transition: 2s;
+    transform: rotateX(90deg);
+    z-index: -1; }
+  .btn-expand:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3b163b;
+    transition: 2s;
+    transform: rotateY(90deg);
+    z-index: -1; }
+  .btn-expand:hover:before {
+    transform: rotateX(0deg); }
+  .btn-expand:hover:after {
+    transform: rotateY(0deg); }
+  .btn-expand:hover {
+    color: #33a9ee; }
