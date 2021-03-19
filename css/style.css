@@ -337,7 +337,7 @@ span:after {
     height: 100%;
     background-color: rgba(45, 52, 54, 0.7);
     border-radius: 15px;
-    transition: all 0.7s;
+    transition: all 1.4s;
     transform: translate(1000px, 700px) rotate(180deg);
     opacity: 0; }
   .container-1:hover:before {
@@ -375,12 +375,12 @@ h2 {
   margin-top: 20px;
   background-color: rgba(0, 0, 0, 0.3);
   transform: translate(200px, -200px);
-  transition: all 0.7s; }
+  transition: all 1.4s; }
 
 .fuji {
   margin-bottom: -10px;
   text-decoration: none;
-  transition: all 0.7s;
+  transition: all 1.4s;
   color: white;
   width: 300px;
   padding: 15px;
@@ -394,5 +394,5 @@ h2 {
   width: 80%;
   align-self: center;
   text-align: center;
-  transition: all 0.7s;
+  transition: all 1.4s;
   transform: translate(-500px, 500px); }
