@@ -55,10 +55,25 @@
 
 .move:hover {
   transform: translate(80vw, 0);
-  background-color: aquamarine; }
+  background-color: #8cfade; }
+
+.images {
+  display: flex;
+  background-color: #e8f1f1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.buttons {
+  background-image: linear-gradient(to right bottom, rgba(23, 190, 140, 0.8), rgba(51, 75, 141, 0.8)), url(../img/nat-1-large.jpg);
+  background-size: cover;
+  margin-top: -60px;
+  clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+  padding: 40px 0; }
 
 .img {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   perspective: 500px; }
@@ -68,11 +83,13 @@
   width: 250px;
   transition: all 2s;
   padding: 20px; }
+  .image:last-child {
+    padding-bottom: 50px; }
   .image--1:hover {
-    transform: translateZ(300px); }
+    transform: translateX(300px); }
   .image--2:hover {
     transform: scale(1.5);
-    transform-origin: -30% -80%; }
+    transform-origin: -30% 80%; }
   .image--3:hover {
     transform: skew(15deg); }
   .image--4:hover {
