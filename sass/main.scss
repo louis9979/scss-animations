@@ -368,11 +368,15 @@ span:after {
   position: relative;
 
   &::before {
-    content: 'text';
+    content: 'mount_fuji';
     position: absolute;
     top: 0;
     left: 0;
-    color: #fbff01;
+    background-image: linear-gradient(-100deg, #b41717 0%, blue 35%, #37a3eb 20%);
+    display: inline-block;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     width: 0;
     overflow: hidden;
     transition: all 2s;
@@ -381,4 +385,52 @@ span:after {
   &:hover::before {
     width: 100%;
   }
+}
+
+.mountain {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1010px;
+  height: 700px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#2d3436, 0.7);
+    border-radius: 15px;
+    transition: all 0.7s;
+    transform: translate(1000px, 700px) rotate(180deg);
+    opacity: 0;
+  }
+
+  &:hover:before {
+    transform: translate(0) rotate(0deg);
+    opacity: 1;
+    overflow: hidden;
+  }
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
 }
