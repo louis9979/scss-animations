@@ -2,8 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 .button {
@@ -110,6 +108,7 @@ a {
   margin: auto;
   margin-bottom: 200px;
   max-width: 400px;
+  margin-top: 50px;
 }
 
 .slide-hover {
@@ -131,28 +130,27 @@ a {
     position: absolute;
     left: 0;
     top: 0;
-    height: 110%;
-    width: 110%;
+    height: 101%;
+    width: 101%;
     background-image: linear-gradient(120deg, #3b163b 0%, #3b163b 50%);
     background-size: 200%;
     z-index: -1;
     transform: translateX(-100%) translateY(80%);
-    opacity: 0;
+
     transition: all 2s;
     border-radius: 13px;
   }
 
   &:hover {
     color: azure;
-    transform: scale(1.1) rotate(-1.3deg) translateX(20px);
+    transform: scale(1.1) translateX(20px);
     box-shadow: -2rem 1.5rem 2rem rgba(black, 0.6);
     font-weight: 900;
     letter-spacing: 2px;
-    border: 7px solid #3b163b;
+    border: 1px solid;
 
     &::before {
       transform: translate(0);
-      opacity: 1;
     }
   }
 }
@@ -209,5 +207,41 @@ a {
     letter-spacing: 5px;
     font-weight: 700;
     transform: scale(1.5);
+  }
+}
+
+.btn-drop {
+  text-decoration: none;
+  color: #653ca7;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid #653ca7;
+  padding: 40px 80px;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  border-radius: 15px;
+  text-align: center;
+
+  &:before {
+    content: 'YEAH!';
+    color: rgb(20, 136, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a738a7;
+    transition: 1s;
+    transform: translateY(-100%);
+    border: 3px solid #a738a7;
+  }
+
+  &:hover:before {
+    transform: translateY(0);
+    border: 3px solid #a738a7;
   }
 }
