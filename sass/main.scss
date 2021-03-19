@@ -76,6 +76,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  perspective: 500px;
 }
 
 .image {
@@ -85,12 +86,12 @@
   padding: 20px;
 
   &--1:hover {
-    transform: translate(400px, 300px);
+    transform: translateZ(300px);
   }
 
   &--2:hover {
     transform: scale(1.5);
-    transform-origin: top;
+    transform-origin: 30% 80%;
   }
 
   &--3:hover {
@@ -98,7 +99,6 @@
   }
 
   &--4:hover {
-    transform: rotate(30deg);
-    transform-origin: 30% 80%;
+    transform: rotateY(180deg);
   }
 }
