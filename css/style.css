@@ -325,7 +325,8 @@ span:after {
   width: 1010px;
   height: 700px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center; }
   .container:before {
     content: '';
     position: absolute;
@@ -346,6 +347,8 @@ span:after {
     transform: translate(0, 0); }
   .container:hover p {
     transform: translate(0, 0); }
+  .container:hover a {
+    transform: translateY(0); }
 
 img {
   width: 100%;
@@ -369,12 +372,21 @@ h2 {
   font-size: 24px;
   padding: 20px;
   margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
   transform: translate(200px, -200px);
   transition: all 0.7s; }
 
 a {
-  margin-bottom: -10px; }
+  margin-bottom: -10px;
+  text-decoration: none;
+  transition: all 0.7s;
+  color: white;
+  width: 300px;
+  padding: 15px;
+  transform: translateY(200px); }
+  a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: sandybrown; }
 
 p {
   font-size: 20px;

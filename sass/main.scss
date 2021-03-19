@@ -400,6 +400,7 @@ span:after {
   height: 700px;
   position: relative;
   overflow: hidden;
+  text-align: center;
 
   &:before {
     content: '';
@@ -428,6 +429,10 @@ span:after {
   &:hover p {
     transform: translate(0, 0);
   }
+
+  &:hover a {
+    transform: translateY(0);
+  }
 }
 
 img {
@@ -454,13 +459,24 @@ h2 {
   font-size: 24px;
   padding: 20px;
   margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
   transform: translate(200px, -200px);
   transition: all 0.7s;
 }
 
 a {
   margin-bottom: -10px;
+  text-decoration: none;
+  transition: all 0.7s;
+  color: white;
+  width: 300px;
+  padding: 15px;
+  transform: translateY(200px);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: sandybrown;
+  }
 }
 
 p {
