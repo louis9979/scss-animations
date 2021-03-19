@@ -91,14 +91,49 @@
 
   &--2:hover {
     transform: scale(1.5);
-    transform-origin: 30% 80%;
+    transform-origin: -30% -80%;
   }
 
   &--3:hover {
-    transform: skew(5deg);
+    transform: skew(15deg);
   }
 
   &--4:hover {
     transform: rotateY(180deg);
+  }
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 200px;
+  max-width: 400px;
+}
+
+.slide-hover {
+  text-decoration: none;
+  color: #3b163b;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid #3b163b;
+  padding: 40px 80px;
+  position: relative;
+  transition: all 1s;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #3b163b;
+    z-index: -1;
+  }
+
+  &:hover {
+    background-color: aquamarine;
   }
 }
